@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'TypePolice_Example' do
+  pod 'TypePolice', :path => '../'
+
+  target 'TypePolice_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+  pod 'Expecta'
+  end
+end
