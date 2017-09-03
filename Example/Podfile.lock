@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.6)
+  - Specta (1.0.6)
+  - TypePolice (0.1.0)
+
+DEPENDENCIES:
+  - Expecta
+  - Specta
+  - TypePolice (from `../`)
+
+EXTERNAL SOURCES:
+  TypePolice:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+  TypePolice: bb64dfef205e8063c2dfa7925f0ea201a6a7b574
+
+PODFILE CHECKSUM: 97c0504ba613c6c8d7b02407ecdd5d43551f20c7
+
+COCOAPODS: 1.3.1

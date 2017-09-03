@@ -1,0 +1,6 @@
+framework module TypePolice {
+  umbrella header "TypePolice-umbrella.h"
+
+  export *
+  module * { export * }
+}
