@@ -4,5 +4,4 @@
 
   @import Specta;
   @import Expecta;
-
 #endif
