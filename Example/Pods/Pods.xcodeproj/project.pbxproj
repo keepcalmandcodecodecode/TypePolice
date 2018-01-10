@@ -109,6 +109,8 @@
 		D73D44871F5BFA2F002B1E00 /* TPPTypePolice.m in Sources */ = {isa = PBXBuildFile; fileRef = D73D44831F5BFA2F002B1E00 /* TPPTypePolice.m */; };
 		D73D44881F5BFA2F002B1E00 /* TPPTypePolice.m in Sources */ = {isa = PBXBuildFile; fileRef = D73D44831F5BFA2F002B1E00 /* TPPTypePolice.m */; };
 		D73D44891F5BFA2F002B1E00 /* TPPTypePolice.m in Sources */ = {isa = PBXBuildFile; fileRef = D73D44831F5BFA2F002B1E00 /* TPPTypePolice.m */; };
+		D74C4AF720061956002D6744 /* NSString+TPPTypePolice.h in Headers */ = {isa = PBXBuildFile; fileRef = D74C4AF520061956002D6744 /* NSString+TPPTypePolice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D74C4AF820061956002D6744 /* NSString+TPPTypePolice.m in Sources */ = {isa = PBXBuildFile; fileRef = D74C4AF620061956002D6744 /* NSString+TPPTypePolice.m */; };
 		D7B1EC642004F697002FD1FC /* TypePolice.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B1EC632004F697002FD1FC /* TypePolice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DB8F3665E9E382DF52E0DCB4DECE5EAE /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EF2564A5B3BCF5B727F63C626FF9935 /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DC423A980C991970F4D637AC4C47D863 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B5A923D27207113E5B55FE0DACDAD9 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -282,6 +284,8 @@
 		D6CF3903D943792CF71D2E59A5FE6602 /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
 		D73D44821F5BFA2F002B1E00 /* TPPTypePolice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPTypePolice.h; path = TypePolice/Classes/TPPTypePolice.h; sourceTree = "<group>"; };
 		D73D44831F5BFA2F002B1E00 /* TPPTypePolice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPTypePolice.m; path = TypePolice/Classes/TPPTypePolice.m; sourceTree = "<group>"; };
+		D74C4AF520061956002D6744 /* NSString+TPPTypePolice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+TPPTypePolice.h"; path = "TypePolice/Classes/NSString+TPPTypePolice.h"; sourceTree = "<group>"; };
+		D74C4AF620061956002D6744 /* NSString+TPPTypePolice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+TPPTypePolice.m"; path = "TypePolice/Classes/NSString+TPPTypePolice.m"; sourceTree = "<group>"; };
 		D7B1EC632004F697002FD1FC /* TypePolice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TypePolice.h; path = TypePolice/Classes/TypePolice.h; sourceTree = "<group>"; };
 		DA5EBB318D16AE6EC1958DC8510C228D /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
 		DAACC7B2EAAA76EAB129F3A5D74DDC18 /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 				D7B1EC632004F697002FD1FC /* TypePolice.h */,
 				D73D44821F5BFA2F002B1E00 /* TPPTypePolice.h */,
 				D73D44831F5BFA2F002B1E00 /* TPPTypePolice.m */,
+				D74C4AF520061956002D6744 /* NSString+TPPTypePolice.h */,
+				D74C4AF620061956002D6744 /* NSString+TPPTypePolice.m */,
 				11B3AAE41DDB7DDC69E96D5CC5066249 /* Support Files */,
 			);
 			name = TypePolice;
@@ -640,6 +646,7 @@
 			files = (
 				FC32480C63E05FF37FF4E1928271880D /* TypePolice-umbrella.h in Headers */,
 				D7B1EC642004F697002FD1FC /* TypePolice.h in Headers */,
+				D74C4AF720061956002D6744 /* NSString+TPPTypePolice.h in Headers */,
 				D73D44861F5BFA2F002B1E00 /* TPPTypePolice.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -866,6 +873,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74C4AF820061956002D6744 /* NSString+TPPTypePolice.m in Sources */,
 				D73D44891F5BFA2F002B1E00 /* TPPTypePolice.m in Sources */,
 				D3D1AF22F747EDBB0D2F9A01034AA118 /* TypePolice-dummy.m in Sources */,
 			);

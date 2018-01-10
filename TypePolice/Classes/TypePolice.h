@@ -8,5 +8,5 @@
 #ifndef TypePolice_h
 #define TypePolice_h
 #import "TPPTypePolice.h"
-
+#import "NSString+TPPTypePolice.h"
 #endif /* TypePolice_h */

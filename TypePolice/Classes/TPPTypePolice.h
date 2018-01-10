@@ -12,6 +12,5 @@
 + (id)value:(id)value isKindOf:(Class)class orDefault:(id)defaultValue;
 + (NSNumber*)numberOrNil:(id)value;
 + (NSNumber*)numberOrZero:(id)value;
-+ (NSString*)stringOrNil:(id)value;
-+ (NSString*)stringOrEmpty:(id)value;
+
 @end
