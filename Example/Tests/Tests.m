@@ -24,7 +24,7 @@ describe(@"these will check base method", ^{
 });
 
 describe(@"these will check NSString", ^{
-    it(@"can check type of NSString", ^{
+    it(@"can check type of NSString and returns nil if not string", ^{
         NSString *type = @"type";
         expect([NSString tpp_stringOrNil:type]).equal(type);
         NSString *emptyString = @"";
@@ -33,6 +33,17 @@ describe(@"these will check NSString", ^{
         expect([NSString tpp_stringOrNil:nilString]).beNil();
         NSString *notAString = (NSString*)@1;
         expect([NSString tpp_stringOrNil:notAString]).beNil();
+    });
+    
+    it(@"can check type of NSString and returns empty string if not string", ^{
+        NSString *type = @"type";
+        expect([NSString tpp_stringOrEmpty:type]).equal(type);
+        NSString *emptyString = @"";
+        expect([NSString tpp_stringOrEmpty:emptyString]).equal(emptyString);
+        NSString *nilString = nil;
+        expect([NSString tpp_stringOrEmpty:nilString]).equal(emptyString);
+        NSString *notAString = (NSString*)@1;
+        expect([NSString tpp_stringOrEmpty:notAString]).equal(emptyString);
         
     });
 });
