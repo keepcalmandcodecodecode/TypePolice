@@ -10,7 +10,4 @@
 
 @interface TPPTypePolice : NSObject
 + (id)value:(id)value isKindOf:(Class)class orDefault:(id)defaultValue;
-+ (NSNumber*)numberOrNil:(id)value;
-+ (NSNumber*)numberOrZero:(id)value;
-
 @end

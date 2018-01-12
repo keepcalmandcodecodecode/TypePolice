@@ -9,4 +9,5 @@
 #define TypePolice_h
 #import "TPPTypePolice.h"
 #import "NSString+TPPTypePolice.h"
+#import "NSNumber+TPPTypePolice.h"
 #endif /* TypePolice_h */

@@ -48,4 +48,26 @@ describe(@"these will check NSString", ^{
     });
 });
 
+describe(@"these will check NSNumber", ^{
+    it(@"can check type of NSNumber and returns nil if not number", ^{
+        NSNumber *one = @1;
+        expect([NSNumber tpp_numberOrNil:one]).equal(one);
+        NSNumber *zero = @0;
+        expect([NSNumber tpp_numberOrNil:zero]).equal(zero);
+        NSString *nilNumber = nil;
+        expect([NSNumber tpp_numberOrNil:nilNumber]).beNil();
+        NSNumber *notANumber = (NSNumber*)@"";
+        expect([NSNumber tpp_numberOrNil:notANumber]).beNil();
+    });
+    
+    it(@"can check type of NSNumber and returns zero if not number", ^{
+        NSNumber *one = @1;
+        expect([NSNumber tpp_numberOrZero:one]).equal(one);
+        NSNumber *nilNumber = nil;
+        expect([NSNumber tpp_numberOrZero:nilNumber]).equal(@0);
+        NSNumber *notANumber = (NSNumber*)@"0";
+        expect([NSNumber tpp_numberOrZero:notANumber]).equal(@0);
+    });
+});
+
 SpecEnd
